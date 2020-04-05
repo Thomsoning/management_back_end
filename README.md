@@ -3,6 +3,7 @@
 > vue+element_Ui
 直接上效果图
 ![image](https://github.com/Thomsoning/management_back_end/blob/master/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.PNG)
+![image](https://github.com/Thomsoning/management_back_end/blob/master/img/%E5%95%86%E5%93%81%E5%88%97%E8%A1%A8.PNG)
 ## Build Setup
 
 ``` bash
