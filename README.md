@@ -1,7 +1,8 @@
 # 后台管理系统
 
 > vue+element_Ui
-
+直接上效果图
+https://github.com/Thomsoning/management_back_end/edit/master/img/数据分析.PNG
 ## Build Setup
 
 ``` bash
