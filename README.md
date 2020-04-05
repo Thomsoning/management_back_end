@@ -2,7 +2,7 @@
 
 > vue+element_Ui
 直接上效果图
-https://github.com/Thomsoning/management_back_end/edit/master/img/数据分析.PNG
+![image](https://github.com/Thomsoning/management_back_end/blob/master/img/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.PNG)
 ## Build Setup
 
 ``` bash
