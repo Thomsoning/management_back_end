@@ -16,11 +16,15 @@
   <el-row>
   <el-col :span="8"><div class="grid-content bg-purple">
 
-     <el-form-item label="商品类别" prop="productInfo" >
-       <el-select v-model="ruleForm.productInfo.cate" placeholder="请选择">
-      <el-option label="水果类" value="水果"></el-option>
-      <el-option label="蔬菜类" value="蔬菜"></el-option>
-      <el-option label="服装类" value="亲子"></el-option>
+     <el-form-item label="教程类别" prop="productCategory" >
+       <el-select v-model="ruleForm.productCategory" placeholder="请选择">
+      <el-option label="HTML" value="8"></el-option>
+      <el-option label="H5" value="9"></el-option>
+      <el-option label="Javascript" value="19"></el-option>
+      <el-option label="Vue.js" value="20"></el-option>
+      <el-option label="JAVA" value="27"></el-option>
+      <el-option label="Python" value="28"></el-option>
+      <el-option label="Mysql" value="36"></el-option>
     </el-select>
   </el-form-item>
     
@@ -57,12 +61,21 @@
   </el-form-item></div></el-col>
   <el-col :span="8"><div class="grid-content bg-purple-light">
     </div></el-col>
+
+    <el-col :span="8"><div class="grid-content bg-purple-light">
+    
+      <el-form-item label="推荐精选" prop="productInfo">
+    <el-switch v-model="ruleForm.productInfo.select"></el-switch>
+  </el-form-item></div></el-col>
+  <el-col :span="8"><div class="grid-content bg-purple-light">
+    </div></el-col>
+    
 </el-row>
 
 
   <el-form-item label="轮播图">
       <el-upload
-      action="http://localhost:8090/uploadimage"
+      action="http://49.233.188.52:8090/uploadimage"
       list-type="picture-card"
       :on-preview="handlePictureCardPreview"
       :on-remove="handleRemove"
@@ -76,7 +89,7 @@
 
   <el-form-item label="详情图">
       <el-upload
-      action="http://localhost:8090/uploadimage"
+      action="http://49.233.188.52:8090/uploadimage"
       list-type="picture-card"
       :on-preview="handlePictureCardPreview"
       :on-remove="handleRemove"
@@ -128,11 +141,15 @@ export default {
           user: '',
           region: ''
         },
-        
+        //开发环境
+       // uploadUrl:"http://localhost:8090/uploadimage",
+        //生产环境
+        uploadUrl:"http://49.233.188.52:8090/uploadimage",
         ruleForm: {
           file:'',
           productPrice:'',
-          productInfo:{"img":[],"detailImg":[],"cate":"","discount":"","desc":""},
+          productCategory:'',
+          productInfo:{"img":[],"detailImg":[],"cate":"","discount":"","desc":"","select":false},
           productNumber:'',
           productName:'',
           dialogImageUrl: '',

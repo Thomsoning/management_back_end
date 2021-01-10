@@ -1,5 +1,8 @@
 import axios from 'axios'
-axios.defaults.baseURL='http://localhost:8090'
+//开发环境
+//axios.defaults.baseURL='http://localhost:8090'
+//生成环境
+axios.defaults.baseURL='http://49.233.188.52:8090'
 export default{
     post(url,params={}) {
         let{isLoading=true}=params;
